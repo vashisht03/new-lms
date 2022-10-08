@@ -421,10 +421,11 @@ a.add_link {
     border: 1px solid;
     box-shadow: 2px 2px 15px rgb(0 0 0 / 7%);
     padding: 7.5px 20px;
-    margin: 11px 25px;
+    margin: 11px 15px;
     border-radius: 6px;
     font-size: 14px;
     transition: all 0.5s linear;
+    height: 40px;
 }
 .leads li:hover{
     color:#ffffff !important;
@@ -436,7 +437,6 @@ a.add_link {
 }
 ul.leads {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     height: 250px;
     margin: 0  -25px;
@@ -538,7 +538,10 @@ li.blue-light:hover{
     box-shadow: 2px 2px 15px rgb(0 0 0 / 7%);
 }
 .graphs .add_link {
-    width: 140px;
+    width: 184px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
 }
 .row-table ::-webkit-scrollbar {
     width: 12px;            /* width of the entire scrollbar */
@@ -559,7 +562,16 @@ li.blue-light:hover{
 .view_link a{
     color: #4A81E5;
 }
-
+ul.leads a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.leads li{
+    position:relative}
 /* leads */
 .customer-detail {
     background: #4A81E5;
@@ -992,8 +1004,7 @@ h3.number-order {
         border-radius: 50%;        
         margin-right: 25px;
     }
-    .timeline span.dot {
-        width: 20px;}
+    
     .timeline span.dot.teal{
         background: #005579;
     }
@@ -1005,6 +1016,12 @@ h3.number-order {
     }
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
+    .body-pd .leads li {
+        width:16.2% !important;
+    }
+    .leads li {
+        width:17%;
+    }
     .customer-height {
         height: 148px;
     }
@@ -1039,6 +1056,8 @@ h3.number-order {
 }
 @media only screen and (max-width:767px){
     /* leads page */
+    .timeline span.dot {
+        width: 20px;}
     .abbre-name {
         display: none !important;
     }    
