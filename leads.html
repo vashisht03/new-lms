@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<!-- date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title></title>
+  </head>
+  <body>
+
+<!-- header -->
+<!-- top bar -->
+<div id="body-pd" >
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg  main-header h-100">
+    <div class="header_toggle"> <img src="images/Menu.png" id="header-toggle"> </div>
+    <form class="d-flex position-relative">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-transparent position-absolute" type="submit"><img src="images/Search.png" class="img-fluid"></button>
+    </form>
+    <ul class="right-info ms-md-auto mb-2 mb-lg-0 d-flex list-style align-items-center">
+      <li class="position-relative me-4">
+         <img src="images/Notification.png" class="img-fluid">
+         <span id="digit" class="position-absolute">1</span>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle  d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="admin-img"><img src="images/SUITES-LOGO.png" class="img-fluid"></span><span class="admin_name">Webhopers Suites</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>Welcome </li>
+          <li><a  href="#"><img src="images/user.png" class="img-fluid">My Profile</a></li>
+          <li><a href="#"><img src="images/Contact-us.png" class="img-fluid">Company Profile</a></li>
+          <li><a href="#"><img src="images/Exercise.png" class="img-fluid">Active Sessions</a></li>
+          <li><a href="#"><img src="images/Logout.png" class="img-fluid">Logout</a></li>
+        </ul><!--dropdown-menu-end-->
+      </li>    
+    </ul>   
+    </nav>    
+</header>
+
+<!-- sidebar -->
+<section class="l-navbar" id="nav-bar">
+    <!-- <span class="close_div">&#10006</span> -->
+  <a class="navbar-brand" href="/"><img src="images/SUITES-LOGO.png" class="img-fluid"></a>
+  <div class="menu_nav">
+    <h4 class="text-uppercase">Menu</h4>
+    <ul >
+        <li><a href="index.html"><img src="images/Dashboard.png" class="img-fluid"><span>Dashboard<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li class="dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/Frame20.png" class="img-fluid"><span>Tasks<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul></li>
+        <li><a href=""><img src="images/Frame21.png" class="img-fluid"><span>Search Locations<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="leads.html"><img src="images/Frame22.png" class="img-fluid"><span>Leads<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame23.png" class="img-fluid"><span>My Team<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame24.png" class="img-fluid"><span>Users<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame25.png" class="img-fluid"><span>Activity Log<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame26.png" class="img-fluid"><span>Settings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame27.png" class="img-fluid"><span>Master<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame28.png" class="img-fluid"><span>Inventery management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame29.png" class="img-fluid"><span>Dispatch management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame30.png" class="img-fluid"><span>Fields management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame31.png" class="img-fluid"><span>Order Listings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href=""><img src="images/Frame32.png" class="img-fluid"><span>Reports<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+    </ul>
+  </div> 
+</section>
+
+
+<!--******* leads page ********-->
+
+<!--Container Main start-->
+<section class="content-wrapper">
+    <div class="page_name">
+      <div class="title_page text-uppercase size-16">LEADS</div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center mb-0">
+          <li class="breadcrumb-item me-2"><a href="">Leads</a></li>
+          <li><img src="images/link-arrow.png" class="img-fluid"></li>
+          <li class="breadcrumb-item active ms-2" aria-current="page">All Leads</li>
+        </ol>
+      </nav>
+    </div><!--page title-->
+    <div class="content-inner">
+       <div class="lead-info row m-0">
+           <div class="col-md-3 col-sm-12 p-0">
+            <div class="customer-detail fist-box position-relative customer-height">
+              <h6 class="size-16 white mb-3"><img src="images/Customer.png" class="img-fluid me-3">Riya Gupta</h6>
+              <h6 class="size-16 d-flex  white align-items-start"><img src="images/marker.png" class="img-fluid me-3"><span class="d-flex flex-column">Foot In<br><span class="mt-1 size-14 address">Sector 18, Noida, <br>
+                Uttar Pradesh - 201301, <br>
+                INDIA</span></span></h6>
+                <div class="abbre-name">
+                   RG
+                </div>
+            </div>             
+           </div><!--col end-->
+           <div class="col-md-6 col-sm-12 p-0">
+              <div class="order-info customer-height position-relative d-flex flex-wrap justify-content-between">
+                <div class="order-inner">
+                  <h6 class="size-14">
+                    DL :                
+                    <span>12532532525</span>
+                  </h6>
+                  <h6 class="size-14">
+                    GST:           
+                    <span>AAAAA0000A</span>
+                  </h6>
+                  <span class="d-flex align-items-center "><h6 class="size-14 border-none">Received <br>Order :</h6>
+                    <h3 class="number-order">12</h3>
+                  </span>
+                </div>
+
+                <div class="order-inner">
+                  <h6 class="size-14">
+                    <img src="images/world-icn.png" class="img-fluid me-2">
+                    <span>www.footin.com</span>
+                  </h6>
+                  <h6 class="size-14">
+                    <img src="images/world-icn.png" class="img-fluid me-2">
+                    <span>www.footin.in</span>
+                  </h6>
+                  <h6 class="size-14 border-none mb-0 pb-0">
+                    Lead Since :                
+                    <span>3 years Ago</span>
+                  </h6>
+                  <h6 class="size-14 border-none mt-0 pt-0 text-center">
+                    Country :           
+                    <span>IN | <img src="images/imdia-icn.png"></span>
+                  </h6>
+                </div>  
+                               
+              </div>
+           </div><!--col end-->
+           <div class="col-md-3 col-sm-12 p-0">
+            <div class="customer-detail position-relative custom-px customer-height">
+              <h6 class="size-14 white  mb-2"><img src="images/mail-icn.png" class="img-fluid me-3">footin@gmail.com</h6>
+              <h6 class="size-14 white mb-2"><img src="images/phone-icn.png" class="img-fluid me-3">+91-8130312577</h6>
+              <h6 class="size-14 white"><img src="images/whatsapp-icn.png" class="img-fluid me-3">+91-8130312577</h6>
+              <a class="edit-link" href="">
+                 <img src="images/user-edit.png" class="img-fluid">
+              </a>
+             <div class="justify-content-end d-flex types-info">
+               <span>PCD</span>
+               <span>TPM</span>
+               <span>SEO</span>
+             </div>
+            </div>             
+           </div><!--col end-->
+       </div><!--lead info row end-->
+
+<!-- accordian -->
+<div class="accordion client-requirement mt-3" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button font-17 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Client Requirements
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body pt-0">
+        <p class="me-md-4">TLörem ipsum hyposora derade. Nyngen nyre: dack suprar. Jus dens. Ing homolig kosm, såsom fode. Höbel vasänas än prolukåse i sohesat. Sad kogen att tåktiga detrevak, inte usamma. Bioktigt eupekroligt i myst vad. Ultratusat bis hev ninäskapet respektive vir. Nyvidade tetrarade i kinade. Prosade sast gisade. Virar onis, inte telev nelig. Polybäktig kofot i renat, i semisamma mikror. Sosat kisam ären infradesamma. Sasäde karar. Lade ben även om pask prek doledes. Hemingen mybyl varen. Selyde kylig. Nyl trins pregisk krode poskade. </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- tabs -->
+  <div class="top-tabssection">
+    <div class="d-md-flex justify-content-between tabs_navbr">
+      <ul class="nav nav-pills mb-0 flex-row justify-content-start" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">Update Latest</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">Leads History</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">Customer Ledger</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-four-tab" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false">Services/Products </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" aria-selected="false">Assigned History</button>
+        </li>
+      </ul>
+      <ul class="d-flex justify-content-end align-items-center list-style right-listing mb-0 pb-0">
+        <li ><img src="images/title-user.png" class="img-fluid">
+          <span class="tooltiptext">Sales : Ajay</span>
+    </li>
+    <li ><img src="images/telle.png" class="img-fluid">
+      <span class="tooltiptext">Telecaller : Ankur</span>
+  </li>
+  <li><img src="images/professional.png" class="img-fluid">
+    <span class="tooltiptext">Report To : Mr. Munish</span>
+  </li>
+      </ul>
+    </div>
+  
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
+      
+        <form class="row m-0 align-items-end">
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> LEAD TYPE</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Visit with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Customer Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="phone" placeholder="Customer Phone Number">
+          </div>
+          <div class="mb-3 col-md-6 col-sm-12">
+            <label class="ms-2 input-label"> Remarks</label>
+            <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> 
+          <div class="mb-3 col-md-6 col-sm-12">
+            <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+              <option value="one">Pharmahopers</option>
+              <option value="two">Hopers</option>
+              <option value="three">Web</option>
+              <option value="four">webHopers</option>
+              <option value="five">Pharmahopers</option>
+              <option value="six">Hopers</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> CTO</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> REMINDER</label>
+            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+          </div> 
+          <div class="col-md-3 col-sm-12 mt-md-4">
+            <label class="check-label">CC To Customer
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-9 col-sm-12 d-md-flex justify-content-end btn-right">
+            <button class="btn btn-primary">update Details</button>
+            <button class="btn btn-gray ms-4">Cancel</button>
+          </div>
+               
+        </form>
+      </div>
+      <!---1st tab close-->
+      <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+        <form class="row m-0 align-items-end">
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> LEAD TYPE</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Visit with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Customer Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="phone" placeholder="Customer Phone Number">
+          </div>
+          <div class="mb-3 col-md-6 col-sm-12">
+            <label class="ms-2 input-label"> Remarks</label>
+            <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> 
+          <div class="mb-3 col-md-6 col-sm-12">
+            <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+              <option value="one">Pharmahopers</option>
+              <option value="two">Hopers</option>
+              <option value="three">Web</option>
+              <option value="four">webHopers</option>
+              <option value="five">Pharmahopers</option>
+              <option value="six">Hopers</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> CTO</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> REMINDER</label>
+            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+          </div> 
+          <div class="col-md-3 col-sm-12 mt-md-4">
+            <label class="check-label">CC To Customer
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-9 col-sm-12 d-md-flex justify-content-end btn-right">
+            <button class="btn btn-primary">update Details</button>
+            <button class="btn btn-gray ms-4">Cancel</button>
+          </div>
+               
+        </form>
+      </div>
+       <!---2nd tab close-->
+      <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+        <form class="row m-0 align-items-end">
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> LEAD TYPE</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Visit with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Customer Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="phone" placeholder="Customer Phone Number">
+          </div>
+          <div class="mb-3 col-md-6 col-sm-12">
+            <label class="ms-2 input-label"> Remarks</label>
+            <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> 
+          <div class="mb-3 col-md-6 col-sm-12">
+            <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+              <option value="one">Pharmahopers</option>
+              <option value="two">Hopers</option>
+              <option value="three">Web</option>
+              <option value="four">webHopers</option>
+              <option value="five">Pharmahopers</option>
+              <option value="six">Hopers</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> CTO</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> REMINDER</label>
+            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+          </div> 
+          <div class="col-md-3 col-sm-12 mt-md-4">
+            <label class="check-label">CC To Customer
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-9 col-sm-12 d-md-flex justify-content-end btn-right">
+            <button class="btn btn-primary">update Details</button>
+            <button class="btn btn-gray ms-4">Cancel</button>
+          </div>
+               
+        </form>
+      </div>
+       <!---3rd tab close-->
+      <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-two-tab">
+        <form class="row m-0 align-items-end">
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> LEAD TYPE</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Visit with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Customer Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="phone" placeholder="Customer Phone Number">
+          </div>
+          <div class="mb-3 col-md-6 col-sm-12">
+            <label class="ms-2 input-label"> Remarks</label>
+            <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> 
+          <div class="mb-3 col-md-6 col-sm-12">
+            <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+              <option value="one">Pharmahopers</option>
+              <option value="two">Hopers</option>
+              <option value="three">Web</option>
+              <option value="four">webHopers</option>
+              <option value="five">Pharmahopers</option>
+              <option value="six">Hopers</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> CTO</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> REMINDER</label>
+            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+          </div> 
+          <div class="col-md-3 col-sm-12 mt-md-4">
+            <label class="check-label">CC To Customer
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-9 col-sm-12 d-md-flex justify-content-end btn-right">
+            <button class="btn btn-primary">update Details</button>
+            <button class="btn btn-gray ms-4">Cancel</button>
+          </div>
+               
+        </form>
+      </div>
+       <!---4th tab close-->
+      <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-three-tab">
+        <form class="row m-0 align-items-end">
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> LEAD TYPE</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Visit with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Customer Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Meeting with</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
+          </div>
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input type="text" class="form-control" name="phone" placeholder="Customer Phone Number">
+          </div>
+          <div class="mb-3 col-md-6 col-sm-12">
+            <label class="ms-2 input-label"> Remarks</label>
+            <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div> 
+          <div class="mb-3 col-md-6 col-sm-12">
+            <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+              <option value="one">Pharmahopers</option>
+              <option value="two">Hopers</option>
+              <option value="three">Web</option>
+              <option value="four">webHopers</option>
+              <option value="five">Pharmahopers</option>
+              <option value="six">Hopers</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <input class="form-control form-file" type="file">
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> CTO</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> 
+          <div class="mb-3 col-md-4 col-sm-12">
+            <label class="ms-2 input-label"> REMINDER</label>
+            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+          </div> 
+          <div class="col-md-3 col-sm-12 mt-md-4">
+            <label class="check-label">CC To Customer
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="col-md-9 col-sm-12 d-md-flex justify-content-end  btn-right">
+            <button class="btn btn-primary">update Details</button>
+            <button class="btn btn-gray ms-4">Cancel</button>
+          </div>               
+        </form>
+      </div>
+       <!---5th tab close-->
+    </div>
+    </div>
+  <!----tab section end---->
+      
+  <!-- timeline -->
+    <div class="timeline">
+         <h5 class="size-16">Activity Timeline</h5>
+         <ul class="mt-3 mx-0 px-0">
+            <li>
+              <span class="dot teal"></span>
+              <span>
+                <h6 class="size-16">12 Invoices have been paid</h6>
+                <p>Lörem ipsum kakövens sos: laktigt. Anavement sassa, och terangen. </p>
+              </span>             
+            </li>
+            <li>
+              <span class="dot blue"></span>
+              <span>
+                <h6 class="size-16">12 Invoices have been paid</h6>
+                <p>Lörem ipsum kakövens sos: laktigt. Anavement sassa, och terangen. </p>
+              </span>             
+            </li>
+            <li>
+              <span class="dot brown"></span>
+              <span>
+                <h6 class="size-16">12 Invoices have been paid</h6>
+                <p>Lörem ipsum kakövens sos: laktigt. Anavement sassa, och terangen. </p>
+              </span>             
+            </li>
+            <li>
+             <img src="images/end-timeline.png" class="img-fluid">
+            </li>
+         </ul>
+    </div>
+  <!-- timeline end -->
+
+    </div>
+</section>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+          <img src="images/logo-footer.png" class="img-fluid">
+          <p class="mb-0 mt-2">SCO - 46, 2nd Floor, Cabin No.-125,<br> Near Cafe Coffe Day, Canam Plaza, Sector-11,<br> Panchkula, Haryana-134109</p>
+      </div><!---col end-->
+      <div class="col-md-9 col-sm-12 pe-md-5">
+         <div class="row">
+            <div class="col-md-6 pe-md-0">
+               <h6 class="border-bottom size-14 mb-2 pb-2"><span>Developed & Marketed by</span> : Webhopers Infotech Private Limited</h6>
+               <h6 class="size-14"><span> Support</span> : <a href="mailto:mukesh@webhopers.in">mukesh@webhopers.in</a></h6>
+               <h6 class="size-14"><span>Helpline</span> : <a href="tel:+91-6284178134">+91-6284178134,</a><a href="tel:+91-7889164845">+91-7889164845</a></h6>
+            </div><!--col end-->
+            <div class="col-md-6 ps-md-0 text-md-end">
+              <h6 class="border-bottom  size-14  mb-2 pb-2"><span>Authorized User</span> : Webhopers Infotech Private Limited</h6>
+              <h6 class="size-14"><span> Email</span> : <a href="mailto:info@webhopers.com">info@webhopers.com</a></h6>
+              <h6 class="size-14"><span>Mobile</span> : <a href="tel:+91-7696228822">+91-7696228822</a></h6>
+            </div><!--col end-->
+         </div><!--row end-->
+      </div><!--col end-->
+    </div><!---row end-->
+  </div>
+  </footer>
+</div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+     
+      </script>
+      <script>
+        $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+      </script>
+  </body>
+</html>
