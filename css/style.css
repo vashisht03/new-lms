@@ -6,6 +6,9 @@ body{
     color:#000000;
 }
 /* common */
+a{
+    text-decoration: none;
+}
 .white{
     color: #ffffff;
 }
@@ -297,10 +300,15 @@ span.admin-img {
     position: absolute;
     right: 8%;
 }
-.l-navbar  .dropdown-menu.show {
+.l-navbar .dropdown-menu.show {
     display: block;
     left: 1px !important;
-    top: -2px !important;
+    top: -29px !important;
+    position: relative !important;
+    transition: all 0.5s linear;
+}
+.l-navbar .dropdown-menu{
+    transition: all 0.5s linear;
 }
 .l-navbar  .dropdown-menu li {
     font-weight: 600;

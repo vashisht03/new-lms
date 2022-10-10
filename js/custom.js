@@ -1,3 +1,16 @@
+var btnToggle = document.querySelector("#header-toggle");
+var sidebar = document.querySelector(".l-navbar");
+
+// When the page loads, use localStorage to set the initial class
+
+if(localStorage.getItem("expand") && localStorage.getItem("expand") == "true"){
+  sidebar.classList.add("expand");
+}
+
+btnToggle.onclick = function() {
+  sidebar.classList.toggle("expand");
+  localStorage.setItem("expand", sidebar.classList.contains("expand"));
+}
 // sidebar
 document.addEventListener("DOMContentLoaded", function(event) {
    
@@ -8,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     headerpd = document.getElementById(headerId)
     
     // Validate that all variables exist
+
     if(toggle && nav && bodypd && headerpd){
     toggle.addEventListener('click', ()=>{
     // show navbar
@@ -21,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
     }
     }
-    
+   
     showNavbar('header-toggle','nav-bar','body-pd','header')
     
     /*===== LINK ACTIVE =====*/
