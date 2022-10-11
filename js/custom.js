@@ -1,16 +1,25 @@
-var btnToggle = document.querySelector("#header-toggle");
-var sidebar = document.querySelector(".l-navbar");
+// date picker
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
 
-// When the page loads, use localStorage to set the initial class
+// maultioption
+  $(document).ready(function() {
+$('.js-example-basic-multiple').select2();
+});
+// var btnToggle = document.querySelector("#header-toggle");
+// var sidebar = document.querySelector(".l-navbar");
 
-if(localStorage.getItem("expand") && localStorage.getItem("expand") == "true"){
-  sidebar.classList.add("expand");
-}
+// // When the page loads, use localStorage to set the initial class
 
-btnToggle.onclick = function() {
-  sidebar.classList.toggle("expand");
-  localStorage.setItem("expand", sidebar.classList.contains("expand"));
-}
+// if(localStorage.getItem("expand") && localStorage.getItem("expand") == "true"){
+//   sidebar.classList.add("expand");
+// }
+
+// btnToggle.onclick = function() {
+//   sidebar.classList.toggle("expand");
+//   localStorage.setItem("expand", sidebar.classList.contains("expand"));
+// }
 // sidebar
 document.addEventListener("DOMContentLoaded", function(event) {
    
@@ -108,3 +117,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         chart.render();
         
         }
+
+        // filter options
+        $(document).ready(function(){
+            $("#dropdownfilter").click(function(){
+              $(".filter_options").toggle();
+            });
+          });

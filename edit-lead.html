@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<!-- date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title></title>
+  </head>
+  <body>
+
+<!-- header -->
+<!-- top bar -->
+<div id="body-pd" >
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg  main-header h-100">
+    <div class="header_toggle" id=""> <img src="images/Menu.png" id="header-toggle"> </div>
+    <form class="d-flex position-relative">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-transparent position-absolute" type="submit"><img src="images/Search.png" class="img-fluid"></button>
+    </form>
+    <ul class="right-info ms-md-auto mb-2 mb-lg-0 d-flex list-style align-items-center">
+      <li class="position-relative me-4">
+         <img src="images/Notification.png" class="img-fluid">
+         <span id="digit" class="position-absolute">1</span>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle  d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="admin-img"><img src="images/SUITES-LOGO.png" class="img-fluid"></span><span class="admin_name">Webhopers Suites</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>Welcome </li>
+          <li><a  href="#"><img src="images/user.png" class="img-fluid">My Profile</a></li>
+          <li><a href="#"><img src="images/Contact-us.png" class="img-fluid">Company Profile</a></li>
+          <li><a href="#"><img src="images/Exercise.png" class="img-fluid">Active Sessions</a></li>
+          <li><a href="#"><img src="images/Logout.png" class="img-fluid">Logout</a></li>
+        </ul><!--dropdown-menu-end-->
+      </li>    
+    </ul>   
+    </nav>    
+</header>
+
+<!-- sidebar -->
+<section class="l-navbar" id="nav-bar">
+    <!-- <span class="close_div">&#10006</span> -->
+  <a class="navbar-brand" href="/"><img src="images/SUITES-LOGO.png" class="img-fluid"></a>
+  <div class="menu_nav">
+    <h4 class="text-uppercase">Menu</h4>
+    <ul >
+        <li><a href="index.html"><img src="images/Dashboard.png" class="img-fluid"><span>Dashboard<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li class="dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/Frame20.png" class="img-fluid"><span>Tasks<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul></li>
+        <li><a href="search-location.html"><img src="images/Frame21.png" class="img-fluid"><span>Search Locations<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="all-leads.html"><img src="images/Frame22.png" class="img-fluid"><span>Leads<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="team.html"><img src="images/Frame23.png" class="img-fluid"><span>My Team<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="users.html"><img src="images/Frame24.png" class="img-fluid"><span>Users<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="activity-log.html"><img src="images/Frame25.png" class="img-fluid"><span>Activity Log<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="settings.html"><img src="images/Frame26.png" class="img-fluid"><span>Settings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="master.html"><img src="images/Frame27.png" class="img-fluid"><span>Master<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="inventery-management.html"><img src="images/Frame28.png" class="img-fluid"><span>Inventery management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="dispatch-management.html"><img src="images/Frame29.png" class="img-fluid"><span>Dispatch management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="fields-management.html"><img src="images/Frame30.png" class="img-fluid"><span>Fields management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="order-listings.html"><img src="images/Frame31.png" class="img-fluid"><span>Order Listings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="reports.html"><img src="images/Frame32.png" class="img-fluid"><span>Reports<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+    </ul>
+  </div> 
+</section>
+
+<span onclick="openNav()">open</span>
+<!--******* leads page ********-->
+
+<!--Container Main start-->
+<section class="content-wrapper">
+    <div class="page_name">
+      <div class="title_page text-uppercase size-16">LEADS</div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center mb-0">
+          <li class="breadcrumb-item me-2"><a href="">Leads</a></li>
+          <li><img src="images/link-arrow.png" class="img-fluid"></li>
+          <li class="breadcrumb-item active ms-2" aria-current="page">All Leads</li>
+        </ol>
+      </nav>
+    </div><!--page title-->
+    <div class="content-inner">
+      <div class="card">
+        <div class="tab-content">
+          <form class="row m-0 align-items-end">
+            <div class="mb-3 col-md-4 col-sm-12">
+              <input type="text" class="form-control" name="name" placeholder="Name">
+            </div>
+            <div class="mb-3 col-md-4 col-sm-12">
+              <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="mb-3 col-md-4 col-sm-12">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>All Divisions</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <input class="form-control form-file" type="file">
+              </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Visit with</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Meeting</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Customer Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4 col-sm-12">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Meeting with</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>           
+              <div class="mb-3 col-md-6 col-sm-12">
+                <label class="ms-2 input-label"> Remarks</label>
+                <textarea class="form-control" placeholder="Remarks" id="exampleFormControlTextarea1" rows="2"></textarea>
+              </div> 
+              <div class="mb-3 col-md-6 col-sm-12">
+                <select class="form-control js-example-basic-multiple" name="states[]" multiple="multiple">
+                  <option value="one">Pharmahopers</option>
+                  <option value="two">Hopers</option>
+                  <option value="three">Web</option>
+                  <option value="four">webHopers</option>
+                  <option value="five">Pharmahopers</option>
+                  <option value="six">Hopers</option>
+                </select>
+              </div> 
+              <div class="mb-3 col-md-4 col-sm-12">
+                <input class="form-control form-file" type="file">
+              </div> 
+              <div class="mb-3 col-md-4 col-sm-12">
+                <label class="ms-2 input-label"> CTO</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div> 
+              <div class="mb-3 col-md-4 col-sm-12">
+                <label class="ms-2 input-label"> REMINDER</label>
+                <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+              </div> 
+              <div class="col-md-3 col-sm-12 mt-md-4">
+                <label class="check-label">CC To Customer
+                  <input type="checkbox" >
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-9 col-sm-12 d-md-flex justify-content-end btn-right">
+                <button class="btn btn-primary">update Details</button>
+                <button class="btn btn-gray ms-4">Cancel</button>
+              </div>
+                   
+            </form>
+        </div>
+      </div>    
+    </div>
+</section>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+          <img src="images/logo-footer.png" class="img-fluid">
+          <p class="mb-0 mt-2">SCO - 46, 2nd Floor, Cabin No.-125,<br> Near Cafe Coffe Day, Canam Plaza, Sector-11,<br> Panchkula, Haryana-134109</p>
+      </div><!---col end-->
+      <div class="col-md-9 col-sm-12 pe-md-5">
+         <div class="row">
+            <div class="col-md-6 pe-md-0">
+               <h6 class="border-bottom size-14 mb-2 pb-2"><span>Developed & Marketed by</span> : Webhopers Infotech Private Limited</h6>
+               <h6 class="size-14"><span> Support</span> : <a href="mailto:mukesh@webhopers.in">mukesh@webhopers.in</a></h6>
+               <h6 class="size-14"><span>Helpline</span> : <a href="tel:+91-6284178134">+91-6284178134,</a><a href="tel:+91-7889164845">+91-7889164845</a></h6>
+            </div><!--col end-->
+            <div class="col-md-6 ps-md-0 text-md-end">
+              <h6 class="border-bottom  size-14  mb-2 pb-2"><span>Authorized User</span> : Webhopers Infotech Private Limited</h6>
+              <h6 class="size-14"><span> Email</span> : <a href="mailto:info@webhopers.com">info@webhopers.com</a></h6>
+              <h6 class="size-14"><span>Mobile</span> : <a href="tel:+91-7696228822">+91-7696228822</a></h6>
+            </div><!--col end-->
+         </div><!--row end-->
+      </div><!--col end-->
+    </div><!---row end-->
+  </div>
+  </footer>
+</div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+     
+      </script>
+      <script>
+        $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+      </script>
+   
+  </body>
+</html>
