@@ -1117,6 +1117,9 @@ h3.number-order {
 } */
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
+    .body-pd  .card_inner form .form-control[type=search] {
+        width: 380px !important;
+    }
     .card_inner  form .form-control[type=search] {
         width: 520px;
         height: 41px;
