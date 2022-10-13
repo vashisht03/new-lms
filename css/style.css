@@ -1128,6 +1128,48 @@ h3.number-order {
 .custom-width{
    box-shadow: none !important;
 }
+
+/* date range */
+.daterangepicker.dropdown-menu.ltr.opensright.show-calendar {
+    left: 46% !important;
+    top: 56% !important;
+}
+.daterangepicker.dropdown-menu.ltr.opensright {
+    left: 68% !important;
+    top: 54% !important;
+    padding: 10px 0;
+    min-width: 80px;
+}
+
+element.style {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+div#reportrange {
+    height: 34px;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #656565;
+    border: 1px solid rgba(74, 129, 229, 0.3) !important;
+    box-shadow: 2px 2px 15px rgb(221 221 239 / 80%);
+    border-radius: 5px;
+    background-color: #F5F5F5 !important;
+    width: 100%;
+}
+.daterangepicker td, .daterangepicker th {
+    font-size: 13px;
+}
+.ranges li {
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    color: #000;
+    padding: 3px 8px;
+    margin: 0 0 4px !important;
+}
 /* .table_lead th .checkmark {
     cursor: auto;
 } */
