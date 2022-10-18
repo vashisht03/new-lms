@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 <!-- date picker -->
+<link href="css/date-time.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
@@ -298,8 +299,9 @@
             </select>
           </div> 
           <div class="mb-3 col-md-4 col-sm-12">
-            <label class="ms-2 input-label"> REMINDER</label>
-            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+            <label class="ms-2 input-label w-100"> REMINDER</label>
+            <!-- <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY"> -->
+            <input id="date_timepicker_start" type="text" value="12-01-2017 06:24">
           </div> 
           <div class="col-md-3 col-sm-12 mt-md-4">
             <label class="check-label">CC To Customer
@@ -394,8 +396,11 @@
             </select>
           </div> 
           <div class="mb-3 col-md-4 col-sm-12">
-            <label class="ms-2 input-label"> REMINDER</label>
-            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+            <div class="mb-3 col-md-4 col-sm-12">
+              <label class="ms-2 input-label w-100"> REMINDER</label>
+              <!-- <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY"> -->
+              <input id="date_timepicker_start" type="text" value="12-01-2017 06:24">
+            </div>
           </div> 
           <div class="col-md-3 col-sm-12 mt-md-4">
             <label class="check-label">CC To Customer
@@ -490,8 +495,11 @@
             </select>
           </div> 
           <div class="mb-3 col-md-4 col-sm-12">
-            <label class="ms-2 input-label"> REMINDER</label>
-            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+            <div class="mb-3 col-md-4 col-sm-12">
+              <label class="ms-2 input-label w-100"> REMINDER</label>
+              <!-- <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY"> -->
+              <input id="date_timepicker_start" type="text" value="12-01-2017 06:24">
+            </div>
           </div> 
           <div class="col-md-3 col-sm-12 mt-md-4">
             <label class="check-label">CC To Customer
@@ -586,8 +594,11 @@
             </select>
           </div> 
           <div class="mb-3 col-md-4 col-sm-12">
-            <label class="ms-2 input-label"> REMINDER</label>
-            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+            <div class="mb-3 col-md-4 col-sm-12">
+              <label class="ms-2 input-label w-100"> REMINDER</label>
+              <!-- <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY"> -->
+              <input id="date_timepicker_start" type="text" value="12-01-2017 06:24">
+            </div>
           </div> 
           <div class="col-md-3 col-sm-12 mt-md-4">
             <label class="check-label">CC To Customer
@@ -682,8 +693,11 @@
             </select>
           </div> 
           <div class="mb-3 col-md-4 col-sm-12">
-            <label class="ms-2 input-label"> REMINDER</label>
-            <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY">
+            <div class="mb-3 col-md-4 col-sm-12">
+              <label class="ms-2 input-label w-100"> REMINDER</label>
+              <!-- <input  class="form-control" type="text" id="datepicker" placeholder="DD/MM/YY"> -->
+              <input id="date_timepicker_start" type="text" value="12-01-2017 06:24">
+            </div>
           </div> 
           <div class="col-md-3 col-sm-12 mt-md-4">
             <label class="check-label">CC To Customer
@@ -772,6 +786,8 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://unpkg.com/jquery-datetimepicker@2.5.21/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/custom.js"></script>
