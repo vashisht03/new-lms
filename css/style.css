@@ -747,7 +747,7 @@ h3.number-order {
         color: #5184E3;
         padding: 13px 22.4px;
     }
-    .right-listing li .tooltiptext {
+    .tooltiptext {
         visibility: hidden;
         width: 115px;
         color: #000;
@@ -763,7 +763,7 @@ h3.number-order {
         background-color: #ffffff;
     }
       
-      .right-listing li:hover .tooltiptext {
+      .right-listing li:hover .tooltiptext,.filter:hover .tooltiptext{
         visibility: visible;
       }
       .tab-content .input-label {
@@ -1286,6 +1286,7 @@ color: #4A81E5;
 .action_info{
     color: #656565;
 }
+
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
     .status{
