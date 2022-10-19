@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- date range -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+<!-- date picker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title></title>
+  </head>
+  <body>
+
+<!-- header -->
+<!-- top bar -->
+<div id="body-pd" >
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg  main-header h-100">
+    <div class="header_toggle" id=""> <img src="images/Menu.png" id="header-toggle"> </div>
+    <form class="d-flex position-relative">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-transparent position-absolute" type="submit"><img src="images/Search.png" class="img-fluid"></button>
+    </form>
+    <ul class="right-info ms-md-auto mb-2 mb-lg-0 d-flex list-style align-items-center">
+      <li class="position-relative me-4">
+         <img src="images/Notification.png" class="img-fluid">
+         <span id="digit" class="position-absolute">1</span>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle  d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="admin-img"><img src="images/SUITES-LOGO.png" class="img-fluid"></span><span class="admin_name">Webhopers Suites</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>Welcome </li>
+          <li><a  href="#"><img src="images/user.png" class="img-fluid">My Profile</a></li>
+          <li><a href="#"><img src="images/Contact-us.png" class="img-fluid">Company Profile</a></li>
+          <li><a href="#"><img src="images/Exercise.png" class="img-fluid">Active Sessions</a></li>
+          <li><a href="#"><img src="images/Logout.png" class="img-fluid">Logout</a></li>
+        </ul><!--dropdown-menu-end-->
+      </li>    
+    </ul>   
+    </nav>    
+</header>
+
+<!-- sidebar -->
+<section class="l-navbar" id="nav-bar">
+    <!-- <span class="close_div">&#10006</span> -->
+  <a class="navbar-brand" href="/"><img src="images/SUITES-LOGO.png" class="img-fluid"></a>
+  <div class="menu_nav">
+    <h4 class="text-uppercase">Menu</h4>
+    <ul >
+        <li><a href="index.html"><img src="images/Dashboard.png" class="img-fluid"><span>Dashboard<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li class="dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/Frame20.png" class="img-fluid"><span>Tasks<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul></li>
+        <li><a href="search-location.html"><img src="images/Frame21.png" class="img-fluid"><span>Search Locations<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="all-leads.html"><img src="images/Frame22.png" class="img-fluid"><span>Leads<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="team.html"><img src="images/Frame23.png" class="img-fluid"><span>My Team<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="users.html"><img src="images/Frame24.png" class="img-fluid"><span>Users<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="activity-log.html"><img src="images/Frame25.png" class="img-fluid"><span>Activity Log<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="settings.html"><img src="images/Frame26.png" class="img-fluid"><span>Settings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="master.html"><img src="images/Frame27.png" class="img-fluid"><span>Master<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="inventery-management.html"><img src="images/Frame28.png" class="img-fluid"><span>Inventery management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="dispatch-management.html"><img src="images/Frame29.png" class="img-fluid"><span>Dispatch management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="fields-management.html"><img src="images/Frame30.png" class="img-fluid"><span>Fields management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="order-listings.html"><img src="images/Frame31.png" class="img-fluid"><span>Order Listings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="reports.html"><img src="images/Frame32.png" class="img-fluid"><span>Reports<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+    </ul>
+  </div> 
+</section>
+<!--******* leads page ********-->
+
+<!--Container Main start-->
+<section class="content-wrapper">
+    <div class="page_name">
+      <div class="title_page text-uppercase size-16">MY TEAM</div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center mb-0">
+          <li class="breadcrumb-item me-2"><a href="">Dashboard</a></li>
+          <li><img src="images/link-arrow.png" class="img-fluid"></li>
+          <li class="breadcrumb-item active ms-2" aria-current="page">My Team</li>
+        </ol>
+      </nav>
+    </div><!--page title-->
+      <div class="content-inner">
+        <div class="d-flex justify-content-end">
+          <a href="" class="add_link d-flex align-items-center"><img src="images/add-icon.png" class="me-2 img-fluid">Add My Team</a>
+        </div>
+        <div class="card p-0 team_top mt-4">
+           <form class="d-flex align-items-center justify-content-between m-0 px-md-4 py-0">
+            <div class="status">
+            <label>Status</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>All</option>
+              <option value="1">Enable</option>
+              <option value="2">Disable</option>
+            </select>
+            </div>
+            <div class="d-flex serach_bar">
+              <button class="btn btn-outline-success" type="submit"><img src="images/Search.png" class="img-fluid"></button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             
+            </div>
+            <div><img src="images/filter-icon.png" class="img-fluid"></div>
+           </form>
+           <p class="text-end size-12 m-0 p-3">Showing 10 of 10</p>
+        </div><!--cad end-->
+        <div class="card px-0">
+           <div class="d-flex justify-content-end arw_btns me-3">
+              <button class="border-none p-0 m-0"><img src="images/left-arw.png" class="img-fluid"></button>
+              <button  class="border-none p-0 m-0"><img src="images/right-arw.png" class="img-fluid"></button>
+           </div>
+           <div class="table-responsive member-table">
+               <table class="w-100 table_lead ">
+                <thead>
+                  <tr style="background-color: #F6F6F6;">
+                  <th>S No.</th>
+                  <th>Status</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>View Members</th>
+                  <th>	Add Members</th>
+                  <th>Action</th>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td>1</td>
+                  <td><div class="enable"></div></td>
+                  <td>Team1</td>
+                  <td>team@gmail.com</td>
+                  <td>
+                    <div class="members d-flex align-items-center">
+                      <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                      <a class="more-box"><img src="images/more-icon.png" class="img-fluid"></a>
+                    </div>
+                  </td>
+                  <td><a href="">Add Members</a></td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-transparent p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ....
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="edit-lead.html"><img src="images/edit-icon.png" clas="img-responsive">Edit</a></li>
+                      <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><img src="images/Trash.png" clas="img-responsive">Delete</a></li>
+                    </ul>
+                  </div></td>
+                 </tr>
+                 <tr>
+                  <td>1</td>
+                  <td><div class="enable"></div></td>
+                  <td>Team1</td>
+                  <td>team@gmail.com</td>
+                  <td>
+                    <div class="members d-flex align-items-center">
+                      <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                      <a class="more-box"><img src="images/more-icon.png" class="img-fluid"></a>
+                    </div>
+                  </td>
+                  <td><a href="">Add Members</a></td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-transparent p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ....
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="edit-lead.html"><img src="images/edit-icon.png" clas="img-responsive">Edit</a></li>
+                      <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><img src="images/Trash.png" clas="img-responsive">Delete</a></li>
+                    </ul>
+                  </div></td>
+                 </tr>
+                 <tr>
+                  <td>1</td>
+                  <td><div class="enable"></div></td>
+                  <td>Team1</td>
+                  <td>team@gmail.com</td>
+                  <td>
+                    <div class="members d-flex align-items-center">
+                      <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                      <a class="more-box"><img src="images/more-icon.png" class="img-fluid"></a>
+                    </div>
+                  </td>
+                  <td><a href="">Add Members</a></td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-transparent p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ....
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="edit-lead.html"><img src="images/edit-icon.png" clas="img-responsive">Edit</a></li>
+                      <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><img src="images/Trash.png" clas="img-responsive">Delete</a></li>
+                    </ul>
+                  </div></td>
+                 </tr>
+                 <tr>
+                  <td>2</td>
+                  <td><div class="enable"></div></td>
+                  <td>Team1</td>
+                  <td>team@gmail.com</td>
+                  <td>
+                    <div class="members d-flex align-items-center ">
+                      <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                      <a class="more-box"><img src="images/more-icon.png" class="img-fluid"></a>
+                    </div>
+                  </td>
+                  <td><a href="">Add Members</a></td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-transparent p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ....
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="edit-lead.html"><img src="images/edit-icon.png" clas="img-responsive">Edit</a></li>
+                      <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><img src="images/Trash.png" clas="img-responsive">Delete</a></li>
+                    </ul>
+                  </div></td>
+                 </tr>
+                 <tr>
+                  <td>3</td>
+                  <td><div class="disable"></div></td>
+                  <td>Team1</td>
+                  <td>team@gmail.com</td>
+                  <td>
+                    <div class="members d-flex align-items-center ">
+                      <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                       <a href=""><img src="images/user-dummy.png" class="img-fluid"></a>
+                      <a class="more-box"><img src="images/more-icon.png" class="img-fluid"></a>
+                    </div>
+                  </td>
+                  <td><a href="">Add Members</a></td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-transparent p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ....
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="edit-lead.html"><img src="images/edit-icon.png" clas="img-responsive">Edit</a></li>
+                      <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#deleteModal" href="#"><img src="images/Trash.png" clas="img-responsive">Delete</a></li>
+                    </ul>
+                  </div></td>
+                 </tr>
+                </tbody>
+               </table>
+           </div><!---table end--->
+           <div class="action_info d-flex align-items-center justify-content-end mt-md-4 pe-4">
+            <div class="d-flex align-items-center size-14 me-3"><div class="enable me-2"></div>Active</div>
+            <div class="d-flex align-items-center size-14"><div class="disable me-2"></div>In-Active</div>
+           </div>
+        </div><!--cad end-->
+     </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+          <img src="images/logo-footer.png" class="img-fluid">
+          <p class="mb-0 mt-2">SCO - 46, 2nd Floor, Cabin No.-125,<br> Near Cafe Coffe Day, Canam Plaza, Sector-11,<br> Panchkula, Haryana-134109</p>
+      </div><!---col end-->
+      <div class="col-md-9 col-sm-12 pe-md-5">
+         <div class="row">
+            <div class="col-md-6 pe-md-0">
+               <h6 class="border-bottom size-14 mb-2 pb-2"><span>Developed & Marketed by</span> : Webhopers Infotech Private Limited</h6>
+               <h6 class="size-14"><span> Support</span> : <a href="mailto:mukesh@webhopers.in">mukesh@webhopers.in</a></h6>
+               <h6 class="size-14"><span>Helpline</span> : <a href="tel:+91-6284178134">+91-6284178134,</a><a href="tel:+91-7889164845">+91-7889164845</a></h6>
+            </div><!--col end-->
+            <div class="col-md-6 ps-md-0 text-md-end">
+              <h6 class="border-bottom  size-14  mb-2 pb-2"><span>Authorized User</span> : Webhopers Infotech Private Limited</h6>
+              <h6 class="size-14"><span> Email</span> : <a href="mailto:info@webhopers.com">info@webhopers.com</a></h6>
+              <h6 class="size-14"><span>Mobile</span> : <a href="tel:+91-7696228822">+91-7696228822</a></h6>
+            </div><!--col end-->
+         </div><!--row end-->
+      </div><!--col end-->
+    </div><!---row end-->
+  </div>
+  </footer>
+</div>
+
+<!-- **********modals********** -->
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure to delete this lead?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" id="delete-btn">Delete</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- alerts -->
+  <div class="alert alert-info  alert-dismissible fade" role="alert" id="buttonAlert">
+   Lead has been deleted
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- date range script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+ 
+    <script src="js/bootstrap.min.js"></script>
+   
+   
+  </body>
+</html>
