@@ -560,7 +560,7 @@ li.blue-light:hover{
   }
   
   .row-table ::-webkit-scrollbar-thumb {
-    background-color: #dddddd;    /* color of the scroll thumb */
+    background-color: #656565db656565db;    /* color of the scroll thumb */
     border-radius: 15px;       /* roundness of the scroll thumb */
     border: 3px solid #ffffff;  /* creates padding around scroll thumb */
   }
@@ -1287,8 +1287,21 @@ color: #4A81E5;
     color: #656565;
 }
 
+/* team member */
+button.button-back {
+    color: rgba(56, 69, 74, 0.75);
+    border: none;
+    font-size: 14px;
+}
+
+.border-blue{
+    border-color: #4A81E5 !important;
+}
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
+    .tree .card{
+        min-width: 225px;
+    }
     .status{
         width: 130px;
         padding-bottom: 6px;
@@ -1688,12 +1701,12 @@ div#buttonAlert button.close {
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
 	height: 151px;
 	overflow: hidden;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #656565db;
 }
 
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div {
 	background: #f5f5f5;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #656565db;
 	color: #666;
 	font-size: 12px;
 	text-align: center;
@@ -1801,7 +1814,7 @@ div#buttonAlert button.close {
 .xdsoft_datetimepicker .xdsoft_calendar td,.xdsoft_datetimepicker .xdsoft_calendar th {
 	width: 14.2857142%;
 	background: #f5f5f5;
-	border: 1px solid #ddd;
+	border: 1px solid #656565db;
 	color: #666;
 	font-size: 12px;
 	text-align: right;
@@ -2022,7 +2035,7 @@ div#buttonAlert button.close {
 }
 .xdsoft_datetimepicker .xdsoft_save_selected {
     display: block;
-    border: 1px solid #dddddd !important;
+    border: 1px solid #656565db656565db !important;
     margin-top: 5px;
     width: 100%;
     color: #454551;
@@ -2078,4 +2091,266 @@ div#buttonAlert button.close {
     padding: 7px 9px;
     font-size: 12px;
     color: #656565;
+}
+
+
+/* team-mebers */
+.tree {
+  margin: 18px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.tree .card{
+    background: #F5F5F5 !important;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 5px !important;
+    border-top:5px solid;
+}
+.border-red{
+    border-color:#DE0202 !important;
+}
+.tree:not(:empty):before, .tree:not(:empty):after,
+.tree ul:not(:empty):before, .tree ul:not(:empty):after,
+.tree li:not(:empty):before, .tree li:not(:empty):after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+.tree ul, .tree li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.tree li {
+  list-style: none;
+}
+.tree li > div {
+  background-color: #eee;
+  color: #222;
+  padding: 5px;
+  display: inline-block;
+}
+.tree.cascade li {
+  margin-left: 24px;
+}
+.tree.cascade li div {
+  margin-top: 12px;
+}
+.tree.cascade li:before {
+  border-left: 1px solid #656565db;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: -12px;
+}
+.tree.cascade li:after {
+  border-top: 1px solid #656565db;
+  width: 12px;
+  left: -12px;
+  top: 24px;
+}
+.tree.cascade li:last-child:before {
+  height: 24px;
+  top: 0;
+}
+.tree.cascade > li:first-child:before {
+  top: 24px;
+}
+.tree.cascade > li:only-child {
+  margin-left: 0;
+}
+.tree.cascade > li:only-child:before, .tree.cascade > li:only-child:after {
+  content: none;
+}
+.tree.horizontal li {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.tree.horizontal li div {
+  margin: 6px 0;
+}
+.tree.horizontal li:before {
+  border-left: 1px solid #656565db;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: -12px;
+}
+.tree.horizontal li:first-child:before {
+  height: 50%;
+  top: 50%;
+}
+.tree.horizontal li:last-child:before {
+  height: 50%;
+  bottom: 50%;
+  top: auto;
+}
+.tree.horizontal li:after, .tree.horizontal li ul:after {
+  border-top: 1px solid #656565db;
+  height: 0;
+  width: 12px;
+  top: 50%;
+  left: -12px;
+}
+.tree.horizontal li:only-child:before {
+  content: none;
+}
+.tree.horizontal li ul:after {
+  left: 0;
+}
+.tree.horizontal > li:only-child {
+  margin-left: 0;
+}
+.tree.horizontal > li:only-child:before, .tree.horizontal > li:only-child:after {
+  content: none;
+}
+.tree ul {
+  display: flex;
+  justify-content: center;
+}
+.tree li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tree li .card {
+    margin: 30px 6px;
+  padding: 0;
+}
+.tree .card-body img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.tree .card-body  span{
+    width: 80%;
+    font-size: 13px;
+    line-height: 14px;
+    color: #38454A;
+}
+.tree .card-body  span h5{
+    font-size: 13px;
+    font-weight: 600;
+}
+.tree li .card .card-header {
+    background-color: transparent;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+.tree li:before {
+  border-left: 1px solid #656565db;
+  height: 30px;
+  width: 0;
+  top: 0;
+}
+.tree li:after {
+  border-top: 1px solid #656565db;
+  height: 0;
+  width: 100%;
+}
+.tree li:first-child:after {
+  border-top: 1px solid #656565db;
+  height: 0;
+  width: 50%;
+  left: 50%;
+}
+.tree li:last-child:after {
+  border-top: 1px solid #656565db;
+  height: 0;
+  width: 50%;
+  right: 50%;
+}
+.tree li:only-child:after {
+  content: none;
+}
+.tree li ul:before {
+    border-left: 1px solid #656565db;
+    height: 30px;
+    width: 0;
+    top: -30px;
+}
+.tree li ul:after {
+    content: '';
+    background-image: url(../images/circle.png);
+    width: 13px;
+    height: 13px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    top: -39px;
+    background-position: top;
+}
+/* .tree li:after{
+    content: '';
+    background-image: url(../images/circle.png);
+    width: 13px;
+    height: 13px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    top: 0px;
+    background-position: top;
+} */
+.tree > li:only-child:before, .tree > li:only-child:after {
+  content: none;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li, .tree.cascade-3 > li > ul > li > ul > li, .tree.cascade-2 > li > ul > li, .tree.cascade-1 > li, .tree .cascade {
+  flex-direction: column;
+  align-items: start;
+  padding: 0 12px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li:before, .tree.cascade-3 > li > ul > li > ul > li:before, .tree.cascade-2 > li > ul > li:before, .tree.cascade-1 > li:before, .tree .cascade:before {
+  left: 24px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li:after, .tree.cascade-3 > li > ul > li > ul > li:after, .tree.cascade-2 > li > ul > li:after, .tree.cascade-1 > li:after, .tree .cascade:after {
+  left: 0;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li:first-child:after, .tree.cascade-3 > li > ul > li > ul > li:first-child:after, .tree.cascade-2 > li > ul > li:first-child:after, .tree.cascade-1 > li:first-child:after, .tree .cascade:first-child:after {
+  left: 24px;
+  width: 100%;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li:last-child:after, .tree.cascade-3 > li > ul > li > ul > li:last-child:after, .tree.cascade-2 > li > ul > li:last-child:after, .tree.cascade-1 > li:last-child:after, .tree .cascade:last-child:after {
+  left: 0;
+  width: 24px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li ul, .tree.cascade-3 > li > ul > li > ul > li ul, .tree.cascade-2 > li > ul > li ul, .tree.cascade-1 > li ul, .tree .cascade ul, .tree.cascade-4 > li > ul > li > ul > li > ul > li li, .tree.cascade-3 > li > ul > li > ul > li li, .tree.cascade-2 > li > ul > li li, .tree.cascade-1 > li li, .tree .cascade li {
+  display: block;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li ul:before, .tree.cascade-3 > li > ul > li > ul > li ul:before, .tree.cascade-2 > li > ul > li ul:before, .tree.cascade-1 > li ul:before, .tree .cascade ul:before, .tree.cascade-4 > li > ul > li > ul > li > ul > li ul:after, .tree.cascade-3 > li > ul > li > ul > li ul:after, .tree.cascade-2 > li > ul > li ul:after, .tree.cascade-1 > li ul:after, .tree .cascade ul:after,
+.tree.cascade-4 > li > ul > li > ul > li > ul > li li:before,
+.tree.cascade-3 > li > ul > li > ul > li li:before,
+.tree.cascade-2 > li > ul > li li:before,
+.tree.cascade-1 > li li:before,
+.tree .cascade li:before, .tree.cascade-4 > li > ul > li > ul > li > ul > li li:after, .tree.cascade-3 > li > ul > li > ul > li li:after, .tree.cascade-2 > li > ul > li li:after, .tree.cascade-1 > li li:after, .tree .cascade li:after {
+  border: none;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li div, .tree.cascade-3 > li > ul > li > ul > li div, .tree.cascade-2 > li > ul > li div, .tree.cascade-1 > li div, .tree .cascade div {
+  margin: 0;
+  margin-top: 12px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li li, .tree.cascade-3 > li > ul > li > ul > li li, .tree.cascade-2 > li > ul > li li, .tree.cascade-1 > li li, .tree .cascade li {
+  margin-left: 24px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li li:before, .tree.cascade-3 > li > ul > li > ul > li li:before, .tree.cascade-2 > li > ul > li li:before, .tree.cascade-1 > li li:before, .tree .cascade li:before {
+  border-left: 1px solid #656565db;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: -12px;
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li li:after, .tree.cascade-3 > li > ul > li > ul > li li:after, .tree.cascade-2 > li > ul > li li:after, .tree.cascade-1 > li li:after, .tree .cascade li:after {
+  border-top: 1px solid #656565db;
+  width: 12px;
+  height: 0;
+  left: -12px;
+  top: 24px;
+  content: "";
+}
+.tree.cascade-4 > li > ul > li > ul > li > ul > li li:last-child:before, .tree.cascade-3 > li > ul > li > ul > li li:last-child:before, .tree.cascade-2 > li > ul > li li:last-child:before, .tree.cascade-1 > li li:last-child:before, .tree .cascade li:last-child:before {
+  height: 24px;
+  top: 0;
+}
+.zoom-btns a.btn {
+    background: #afafaf;
+    color: #fff;
 }
