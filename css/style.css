@@ -1297,8 +1297,24 @@ button.button-back {
 .border-blue{
     border-color: #4A81E5 !important;
 }
+
+/* add member */
+.bg-gray{
+    background: rgba(221, 221, 239, 0.3);
+box-shadow: 2px 2px 7px #EDEDF7;
+padding:12px;
+}
+.bg-gray h5{
+    font-weight: 700;
+    line-height: 22px;          
+    color: #313030;
+}
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
+    .source .draggable {
+        width: 32%;
+        margin:3px;
+    }
     .tree .card{
         min-width: 225px;
     }
@@ -1363,6 +1379,20 @@ button.button-back {
     /* .body-pd{padding-left: calc(68px + 188px)} */
 }
 @media only screen and (max-width:767px){
+    .status {
+        width: 30%;
+        padding-left: 7px;
+    }
+    .source .draggable {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .filter {
+        padding-right: 13px;
+    }
+    .serach_bar {
+        width: 48%;
+    }
     .table_lead .dropdown-menu {
         height: 117px;
         z-index: 99;
@@ -2035,7 +2065,7 @@ div#buttonAlert button.close {
 }
 .xdsoft_datetimepicker .xdsoft_save_selected {
     display: block;
-    border: 1px solid #656565db656565db !important;
+    border: 1px solid #656565db!important;
     margin-top: 5px;
     width: 100%;
     color: #454551;
@@ -2354,3 +2384,37 @@ div#buttonAlert button.close {
     background: #afafaf;
     color: #fff;
 }
+
+
+
+.target {
+    border: 1px solid rgb(226, 226, 226);
+    background-color: #ededf8;
+    height: 100%;
+}
+.target .draggable {
+    background-color: #ffffff !important;
+    margin: 7px 7px 8px !important;
+}
+  
+  .draggable {
+    border: none;
+    padding: 1.5ch;
+    background-color: #ededf8;
+    cursor: move;
+}
+  .draggable.is-dragging {
+    opacity: 0.5;
+  }
+.source .draggable{
+   display: inline-block;
+}
+  .draggable .inner img{
+    width:53px;
+    height:53px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  .draggable .inner a{
+    color: #474747;
+  }
