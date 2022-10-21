@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<!-- date picker -->
+<link href="css/date-time.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title></title>
+  </head>
+  <body>
+
+<!-- header -->
+<!-- top bar -->
+<div id="body-pd" >
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg  main-header h-100">
+    <div class="header_toggle" id=""> <img src="images/Menu.png" id="header-toggle"> </div>
+    <form class="d-flex position-relative">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-transparent position-absolute" type="submit"><img src="images/Search.png" class="img-fluid"></button>
+    </form>
+    <ul class="right-info ms-md-auto mb-2 mb-lg-0 d-flex list-style align-items-center">
+      <li class="position-relative me-4">
+         <img src="images/Notification.png" class="img-fluid">
+         <span id="digit" class="position-absolute">1</span>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle  d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="admin-img"><img src="images/SUITES-LOGO.png" class="img-fluid"></span><span class="admin_name">Webhopers Suites</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>Welcome </li>
+          <li><a  href="#"><img src="images/user.png" class="img-fluid">My Profile</a></li>
+          <li><a href="#"><img src="images/Contact-us.png" class="img-fluid">Company Profile</a></li>
+          <li><a href="#"><img src="images/Exercise.png" class="img-fluid">Active Sessions</a></li>
+          <li><a href="#"><img src="images/Logout.png" class="img-fluid">Logout</a></li>
+        </ul><!--dropdown-menu-end-->
+      </li>    
+    </ul>   
+    </nav>    
+</header>
+
+<!-- sidebar -->
+<section class="l-navbar" id="nav-bar">
+    <!-- <span class="close_div">&#10006</span> -->
+  <a class="navbar-brand" href="/"><img src="images/SUITES-LOGO.png" class="img-fluid"></a>
+  <div class="menu_nav">
+    <h4 class="text-uppercase">Menu</h4>
+    <ul >
+        <li><a href="index.html"><img src="images/Dashboard.png" class="img-fluid"><span>Dashboard<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li class="dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/Frame20.png" class="img-fluid"><span>Tasks<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul></li>
+        <li><a href="search-location.html"><img src="images/Frame21.png" class="img-fluid"><span>Search Locations<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="all-leads.html"><img src="images/Frame22.png" class="img-fluid"><span>Leads<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="team.html"><img src="images/Frame23.png" class="img-fluid"><span>My Team<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="users.html"><img src="images/Frame24.png" class="img-fluid"><span>Users<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="activity-log.html"><img src="images/Frame25.png" class="img-fluid"><span>Activity Log<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="settings.html"><img src="images/Frame26.png" class="img-fluid"><span>Settings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="master.html"><img src="images/Frame27.png" class="img-fluid"><span>Master<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="inventery-management.html"><img src="images/Frame28.png" class="img-fluid"><span>Inventery management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="dispatch-management.html"><img src="images/Frame29.png" class="img-fluid"><span>Dispatch management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="fields-management.html"><img src="images/Frame30.png" class="img-fluid"><span>Fields management<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="order-listings.html"><img src="images/Frame31.png" class="img-fluid"><span>Order Listings<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+        <li><a href="reports.html"><img src="images/Frame32.png" class="img-fluid"><span>Reports<img src="images/arrow.png" class="img-fluid d-block ms-auto"></span></a></li>
+    </ul>
+  </div> 
+</section>
+
+<!--******* leads page ********-->
+
+<!--Container Main start-->
+<section class="content-wrapper">
+    <div class="page_name">
+      <div class="title_page text-uppercase size-16">SEARCH LOCATION</div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center mb-0">
+          <li class="breadcrumb-item me-2"><a href="">Dashboard</a></li>
+          <li><img src="images/link-arrow.png" class="img-fluid"></li>
+          <li class="breadcrumb-item active ms-2" aria-current="page">Search Location</li>
+        </ol>
+      </nav>
+    </div><!--page title-->
+    <div class="content-inner ">
+      <div class="card">
+        <div class="d-flex align-items-start location_inner row m-md-0">
+         
+          <div class="nav flex-column nav-pills col-md-3 col-sm-12" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <h5 class="size-16 mb-md-4"><b>States</b></h5>
+            <button class="nav-link active" id="v-pills-first-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first" type="button" role="tab" aria-controls="v-pills-first" aria-selected="true">Andhra Pradesh <span class="count">(2)</span></button>
+            <button class="nav-link" id="v-pills-second-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second" type="button" role="tab" aria-controls="v-pills-second" aria-selected="false">Assam <span class="count">(3)</span></button>
+            <button class="nav-link" id="v-pills-third-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third" type="button" role="tab" aria-controls="v-pills-third" aria-selected="false">Bihar <span class="count">(2)</span></button>
+            <button class="nav-link" id="v-pills-forth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-forth" type="button" role="tab" aria-controls="v-pills-forth" aria-selected="false">Chattisgarh <span class="count">(5)</span></button>
+            <button class="nav-link" id="v-pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fifth" type="button" role="tab" aria-controls="v-pills-fifth" aria-selected="false">Delhi <span class="count">(1)</span></button>
+            <button class="nav-link" id="v-pills-sixth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sixth" type="button" role="tab" aria-controls="v-pills-sixth" aria-selected="false">Gujarat <span class="count">(3)</span></button>
+            <button class="nav-link" id="v-pills-seventh-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seventh" type="button" role="tab" aria-controls="v-pills-seventh" aria-selected="false">Haryana <span class="count">(2)</span></button>
+            <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight" type="button" role="tab" aria-controls="v-pills-eight" aria-selected="true">Himachal Pradesh <span class="count">(1)</span></button>
+            <button class="nav-link" id="v-pills-ninth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ninth" type="button" role="tab" aria-controls="v-pills-ninth" aria-selected="false">Jharkhand <span class="count">(3)</span></button>
+            <button class="nav-link" id="v-pills-tenth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tenth" type="button" role="tab" aria-controls="v-pills-tenth" aria-selected="false">Madhya Pradesh<span class="count">(4)</span></button>
+            <button class="nav-link" id="v-pills-eleventh-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eleventh" type="button" role="tab" aria-controls="v-pills-eleventh" aria-selected="false">Punjab<span class="count">(5)</span></button>
+          </div>
+          <div class="tab-content col-md-8 col-sm-12 mx-auto px-md-5" id="v-pills-tabContent">
+            <h5 class="size-16 mb-md-4"><b>Search Location</b></h5>
+            <form class="location-search d-md-flex align-items-center justify-content-center">
+                <input class="form-control me-md-3 mb-3 mb-md-0" type="search" placeholder="Search" aria-label="Search">
+                <select class="form-select me-md-3  mb-3 mb-md-0" aria-label="Default select example">
+                  <option selected>All Division</option>
+                  <option value="division1">One</option>
+                  <option value="division2">Two</option>
+                  <option value="division3">Three</option>
+                </select>
+                <button class="btn btn-primary  me-md-3 " type="submit">Search</button>
+                <button class="btn btn-secondary" type="submit">Back</button>
+            </form>
+            <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
+               <div class="inner_content mt-4">
+                  <h4 class="text-capitalize size-16">Working location in <span>Andhra Pradesh</span></h4>
+                  <div class="table-responsive">
+                    <table class="w-100">
+                      <thead>
+                        <tr>
+                          <th >Sr No.  </th>
+                          <th>Distt.</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td class="details-control"  onclick="divisionTable1()">Guntur <span class="count">(1)</span></td>
+                         
+                        </tr>
+                        <!-- open inner division -->
+                        <tr  class="border-none px-0  table-info " id="table_body1">
+                          <td colspan="2" class="border-none  px-0">
+                            <table class="w-100 card " >
+                              <tr>
+                                <th >Sr No.</th>
+                                <th>Company Name</th>
+                                <th>Division</th>
+                              </tr>
+                              <tr>
+                                <td width="100">1</td>
+                                <td >Ravi</td>
+                                <td width="200">one </td>
+                              </tr>
+                            </table>
+                          </td>                          
+                        </tr><!---show-hide-->
+                       
+                        <tr >
+                          <td>2</td>
+                          <td class="details-control"  onclick="divisionTable2()">Visakhapatnam <span class="count">(1)</span></td>
+                        </tr>
+                         <!-- open inner division -->
+                        <tr  class="border-none px-0  table-info " id="table_body2">
+                          <td colspan="2" class="border-none  px-0">
+                            <table class="w-100 card " >
+                              <tr>
+                                <th >Sr No.</th>
+                                <th>Company Name</th>
+                                <th>Division</th>
+                              </tr>
+                              <tr>
+                                <td width="100">1</td>
+                                <td >Ravi</td>
+                                <td width="200">one </td>
+                              </tr>
+                            </table>
+                          </td>                          
+                        </tr><!---show-hide-->
+                      </tbody>
+                    </table>
+                  </div>
+               </div><!--inner-content end-->
+            </div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-second" role="tabpanel" aria-labelledby="v-pills-second-tab">
+              <div class="inner_content mt-4">
+                <h4 class="text-capitalize size-16">Working location in <span>Assam</span></h4>
+                <div class="table-responsive">
+                  <table class="w-100">
+                    <thead>
+                      <tr>
+                        <th >Sr No.  </th>
+                        <th>Distt.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="details-control"  onclick="divisionTable3()">Baksa <span class="count">(1)</span></td>
+                       
+                      </tr>
+                       <!-- open inner division -->
+                       <tr  class="border-none px-0  table-info " id="table_body3">
+                        <td colspan="2" class="border-none  px-0">
+                          <table class="w-100 card " >
+                            <tr>
+                              <th >Sr No.</th>
+                              <th>Company Name</th>
+                              <th>Division</th>
+                            </tr>
+                            <tr>
+                              <td width="100">1</td>
+                              <td >Ravi</td>
+                              <td width="200">one </td>
+                            </tr>
+                          </table>
+                        </td>                          
+                      </tr><!---show-hide-->
+                     
+                      <tr >
+                        <td>2</td>
+                        <td class="details-control"  onclick="divisionTable4()">Nagaon <span class="count">(1)</span></td>
+                      </tr>
+                       <!-- open inner division -->
+                      <tr  class="border-none px-0  table-info " id="table_body4">
+                        <td colspan="2" class="border-none  px-0">
+                          <table class="w-100 card " >
+                            <tr>
+                              <th >Sr No.</th>
+                              <th>Company Name</th>
+                              <th>Division</th>
+                            </tr>
+                            <tr>
+                              <td width="100">1</td>
+                              <td >Ravi</td>
+                              <td width="200">one </td>
+                            </tr>
+                          </table>
+                        </td>                          
+                      </tr><!---show-hide-->
+                      <tr >
+                        <td>3</td>
+                        <td class="details-control"  onclick="divisionTable5()">West Karbi Anglong <span class="count">(1)</span></td>
+                      </tr>
+                       <!-- open inner division -->
+                      <tr  class="border-none px-0  table-info " id="table_body5">
+                        <td colspan="2" class="border-none  px-0">
+                          <table class="w-100 card " >
+                            <tr>
+                              <th >Sr No.</th>
+                              <th>Company Name</th>
+                              <th>Division</th>
+                            </tr>
+                            <tr>
+                              <td width="100">1</td>
+                              <td >Ravi</td>
+                              <td width="200">one </td>
+                            </tr>
+                          </table>
+                        </td>                          
+                      </tr><!---show-hide-->
+                    </tbody>
+                  </table>
+                </div>
+             </div><!--inner-content end-->
+            </div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-third" role="tabpanel" aria-labelledby="v-pills-third-tab">opop</div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-forth" role="tabpanel" aria-labelledby="v-pills-forth-tab">xcv</div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">...</div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-sixth" role="tabpanel" aria-labelledby="v-pills-sixth-tab">...</div><!---tab end-->
+
+            <div class="tab-pane fade" id="v-pills-seventh" role="tabpanel" aria-labelledby="v-pills-seventh-tab">...</div><!---tab end-->
+          </div><!---tab content end-->
+          <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">...</div>
+          <div class="tab-pane fade" id="v-pills-ninth" role="tabpanel" aria-labelledby="v-pills-ninth-tab">...</div>
+          <div class="tab-pane fade" id="v-pills-tenth" role="tabpanel" aria-labelledby="v-pills-tenth-tab">...</div>
+          <div class="tab-pane fade" id="v-pills-eleventh" role="tabpanel" aria-labelledby="v-pills-eleventh-tab">...</div>
+        </div><!--row end-->
+      </div><!--card end-->
+    </div>
+</section>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+          <img src="images/logo-footer.png" class="img-fluid">
+          <p class="mb-0 mt-2">SCO - 46, 2nd Floor, Cabin No.-125,<br> Near Cafe Coffe Day, Canam Plaza, Sector-11,<br> Panchkula, Haryana-134109</p>
+      </div><!---col end-->
+      <div class="col-md-9 col-sm-12 pe-md-5">
+         <div class="row">
+            <div class="col-md-6 pe-md-0">
+               <h6 class="border-bottom size-14 mb-2 pb-2"><span>Developed & Marketed by</span> : Webhopers Infotech Private Limited</h6>
+               <h6 class="size-14"><span> Support</span> : <a href="mailto:mukesh@webhopers.in">mukesh@webhopers.in</a></h6>
+               <h6 class="size-14"><span>Helpline</span> : <a href="tel:+91-6284178134">+91-6284178134,</a><a href="tel:+91-7889164845">+91-7889164845</a></h6>
+            </div><!--col end-->
+            <div class="col-md-6 ps-md-0 text-md-end">
+              <h6 class="border-bottom  size-14  mb-2 pb-2"><span>Authorized User</span> : Webhopers Infotech Private Limited</h6>
+              <h6 class="size-14"><span> Email</span> : <a href="mailto:info@webhopers.com">info@webhopers.com</a></h6>
+              <h6 class="size-14"><span>Mobile</span> : <a href="tel:+91-7696228822">+91-7696228822</a></h6>
+            </div><!--col end-->
+         </div><!--row end-->
+      </div><!--col end-->
+    </div><!---row end-->
+  </div>
+  </footer>
+</div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://unpkg.com/jquery-datetimepicker@2.5.21/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+     
+      </script>
+      <script>
+        $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+      </script>
+   
+  </body>
+</html>

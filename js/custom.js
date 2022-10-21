@@ -299,4 +299,69 @@ dropzones.forEach((zone) => {
 
 
 
+// table
+function create_tr(table_id) {
+  let table_body = document.getElementById(table_id),
+      first_tr   = table_body.firstElementChild
+      tr_clone   = first_tr.cloneNode(true);
+
+  table_body.append(tr_clone);
+
+  clean_first_tr(table_body.firstElementChild);
+}
+
+function clean_first_tr(firstTr) {
+  let children = firstTr.children;
+  
+  children = Array.isArray(children) ? children : Object.values(children);
+  children.forEach(x=>{
+      if(x !== firstTr.lastElementChild)
+      {
+          x.firstElementChild.value = '';
+      }
+  });
+}
+
+
+function divisionTable1() {
+  var x = document.getElementById("table_body1");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+function divisionTable2() {
+  var x = document.getElementById("table_body2");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+function divisionTable3() {
+  var x = document.getElementById("table_body3");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+function divisionTable4() {
+  var x = document.getElementById("table_body4");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+function divisionTable5() {
+  var x = document.getElementById("table_body5");
+  if (x.style.display === "contents") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "contents";
+  }
+}
+
                 
