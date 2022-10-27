@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             
             });
 
-            
+            // date time range
             $(document).ready(function() {
               $.datetimepicker.setLocale('RU');
              $('#datetimepicker').datetimepicker({
