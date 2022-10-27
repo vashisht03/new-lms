@@ -1842,6 +1842,7 @@ div#buttonAlert button.close {
 }
 
 .xdsoft_datetimepicker .xdsoft_label {
+    color: #000000 !important;
 	display: inline;
 	position: relative;
 	z-index: 9999;
@@ -2197,7 +2198,7 @@ div#buttonAlert button.close {
 }
 
 
-#date_timepicker_start{
+#datetimepicker{
     width: 100%;
     border-radius: 5px;
     border: 1px solid #c1d2f0;

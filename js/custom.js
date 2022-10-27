@@ -165,67 +165,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
 
             
+            $(document).ready(function() {
+              $.datetimepicker.setLocale('RU');
+             $('#datetimepicker').datetimepicker({
+              step: 15 
+          });
+          });
 
-
-            jQuery(function(){
-                var start_date = moment(jQuery('#date_timepicker_start').val(), 'DD-MM-YYYY HH:mm').format("DD-MM-YYYY");
-                var start_time = moment(jQuery('#date_timepicker_start').val(), 'DD-MM-YYYY HH:mm').format("HH:mm");
-                
-                var end_date = moment(jQuery('#date_timepicker_end').val(), 'DD-MM-YYYY HH:mm').format("DD-MM-YYYY");
-                var end_time = moment(jQuery('#date_timepicker_end').val(), 'DD-MM-YYYY HH:mm').format("HH:mm");
-                //moment('<local date value>','<local date format>').format('<expected convert format>')
-                 jQuery('#date_timepicker_start').datetimepicker({
-                  format:'d-m-Y h:i',
-                  onShow:function( ct ){
-                   this.setOptions({
-                    maxDate:end_date?end_date:false,
-                    maxTime:end_time?end_time:false
-                   })
-                  },
-                  timepicker:true
-                 });
-                 jQuery('#date_timepicker_end').datetimepicker({
-                  format:'d-m-Y h:i',
-                  onShow:function( ct ){
-                   this.setOptions({
-                    minDate:start_date?start_date:false,
-                    minTime:start_time?start_time:false
-                   })
-                  },
-                  timepicker:true
-                 });
-                });
-                
-                
-                function getFormatDate(datetimestring, datetimeformat, sp){
-                  if(sp===''){
-                    sp = '-';
-                  }
-                  //var sDate = new Date(Date.parse("03/20/2012 23:20","MM/dd/yyyy HH:mm"));
-                  dt = new Date(Date.parse(datetimestring, datetimeformat));
-                  date = dt.getDate();
-                  date = date < 10 ? "0"+date : date;
-                  mon = dt.getMonth();
-                  mon = mon < 10 ? "0"+mon : mon;
-                  year = dt.getFullYear();
-                  return date.toString()+sp+mon.toString()+sp+year.toString();
-                }
-                function getFormatTime(datetimestring, datetimeformat,sp){
-                  if(sp===''){
-                    sp = ':';
-                  }
-                  //var sDate = new Date(Date.parse("03/20/2012 23:20","MM/dd/yyyy HH:mm"));
-                  dt = new Date(Date.parse(datetimestring, datetimeformat));
-                  //	var d2 = dt.setDate(dt.getDate() + 1);
-                  //	var curr_date = dt.getDate();
-                  //	var curr_month = dt.getMonth()+1;
-                  //	var curr_year = dt.getFullYear();
-                  hour = dt.getHours();
-                  hour = hour < 10 ? "0"+hour : hour;
-                  min = dt.getMinutes();
-                  min = min < 10 ? "0"+min : min;
-                  return hour.toString()+sp+min.toString();   
-                }
+           
                 
 
 
