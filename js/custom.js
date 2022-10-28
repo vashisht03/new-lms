@@ -174,8 +174,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           $(".slide-toggle").click(function(){
               $(".box").animate({
                   width: "toggle"
-              });
-               1000});
+              }, 2500);
+               });
           });
 
            
