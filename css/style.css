@@ -889,6 +889,21 @@ h3.number-order {
         color: #FFFFFF;
         height: 38px;
     }
+    .sales-reporting-show {
+        background-color: #4A81E5;
+        border: none;
+        color: #fff;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+          margin-left: 2px;
+        border-radius: 50%;
+        width: 25px;
+        margin-left: -220px;
+      }
     div#pills-tabContent {
         margin: 15px 0;
     }
