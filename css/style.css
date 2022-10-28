@@ -1396,7 +1396,32 @@ a.up_dooc {
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 12%);
 }
-
+.mutual_section {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #F3F3F9;
+    box-shadow: 2px 2px 15px rgb(182 182 196 / 25%);
+}
+.box{
+    margin-left: auto;
+    overflow: hidden;
+    background: #ffffff;
+    margin-top: 12px;
+    margin-bottom: 9px;
+}
+/* Add padding and border to inner content
+for better animation effect */
+.box-inner{
+    width: 100%;
+    padding: 10px;
+}
+button.slide-toggle {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
 /* -----------media query--------------- */
 @media screen and (min-width: 768px){
     .source .draggable {

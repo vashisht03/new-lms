@@ -170,6 +170,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
              $('#datetimepicker').datetimepicker({
               step: 15 
           });
+          $(".box").hide();
+          $(".slide-toggle").click(function(){
+              $(".box").animate({
+                  width: "toggle"
+              });
+               1000});
           });
 
            
