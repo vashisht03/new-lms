@@ -786,6 +786,17 @@ h3.number-order {
         background-color: #F5F5F5 !important;
 
     }
+    .form-control , select.form-select  {
+        height: 34px;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #656565;
+        border: 1px solid rgba(74, 129, 229, 0.3) !important;
+        box-shadow: 2px 2px 15px rgb(221 221 239 / 80%);
+        border-radius: 5px;
+        background-color: #F5F5F5 !important;
+    }
     input.form-control.form-file:after {
         content: 'choose file';
         position: absolute;
