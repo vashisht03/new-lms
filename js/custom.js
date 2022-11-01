@@ -12,10 +12,8 @@ function toggle(source) {
 
 // maultioption
   $(document).ready(function() {
-    $("#delete-btn").click(function(){
         $("#buttonAlert").addClass('show') 
         setTimeout(function() { $("#buttonAlert").fadeOut(1500); }, 5000)//Shows Bootstrap alert
-  })
 $('.js-example-basic-multiple').select2();
 
 });
@@ -170,12 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
              $('#datetimepicker').datetimepicker({
               step: 15 
           });
-          $(".box").hide();
-          $(".slide-toggle").click(function(){
-              $(".box").animate({
-                  width: "toggle"
-              }, 2500);
-               });
+
           });
 
            
@@ -316,5 +309,3 @@ function divisionTable5() {
     x.style.display = "contents";
   }
 }
-
-                
