@@ -9,7 +9,11 @@ function toggle(source) {
             checkboxes[i].checked = source.checked;
     }
 }
-
+// toggle category menu
+$(document).ready(function(){
+$(".category-menu").click(function(){
+  $(".sub_categories").slideToggle(1000);
+});});
 // maultioption
   $(document).ready(function() {
         $("#buttonAlert").addClass('show') 
@@ -168,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
              $('#datetimepicker').datetimepicker({
               step: 15 
           });
-
+            
           });
 
            
