@@ -10,10 +10,16 @@ function toggle(source) {
     }
 }
 // toggle category menu
+
 $(document).ready(function(){
-$(".category-menu").click(function(){
-  $(".sub_categories").slideToggle(1000);
-});});
+  $(".category-menu").click(function(){
+    $(".sub_categories").collapse('toggle'); // toggle collapse
+    $(".category-menu.rotateicon").removeClass("rotateicon");
+    $(this).addClass("rotateicon");
+  });
+ 
+ 
+});
 // maultioption
   $(document).ready(function() {
         $("#buttonAlert").addClass('show') 
