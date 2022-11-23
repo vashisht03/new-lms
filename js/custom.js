@@ -9,11 +9,12 @@ function toggle(source) {
             checkboxes[i].checked = source.checked;
     }
 }
+
 // toggle category menu
-$(document).ready(function(){
-$(".category-menu").click(function(){
-  $(".sub_categories").slideToggle(1000);
-});});
+// $(document).ready(function(){
+// $(".category-menu").click(function(){
+//   $(".sub_categories").slideToggle(1000);
+// });});
 // maultioption
   $(document).ready(function() {
         $("#buttonAlert").addClass('show') 
@@ -273,43 +274,43 @@ function clean_first_tr(firstTr) {
 }
 
 
-function divisionTable1() {
-  var x = document.getElementById("table_body1");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
-}
-function divisionTable2() {
-  var x = document.getElementById("table_body2");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
-}
-function divisionTable3() {
-  var x = document.getElementById("table_body3");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
-}
-function divisionTable4() {
-  var x = document.getElementById("table_body4");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
-}
-function divisionTable5() {
-  var x = document.getElementById("table_body5");
-  if (x.style.display === "contents") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "contents";
-  }
-}
+// function divisionTable1() {
+//   var x = document.getElementById("table_body1");
+//   if (x.style.display === "contents") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "contents";
+//   }
+// }
+// function divisionTable2() {
+//   var x = document.getElementById("table_body2");
+//   if (x.style.display === "contents") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "contents";
+//   }
+// }
+// function divisionTable3() {
+//   var x = document.getElementById("table_body3");
+//   if (x.style.display === "contents") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "contents";
+//   }
+// }
+// function divisionTable4() {
+//   var x = document.getElementById("table_body4");
+//   if (x.style.display === "contents") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "contents";
+//   }
+// }
+// function divisionTable5() {
+//   var x = document.getElementById("table_body5");
+//   if (x.style.display === "contents") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "contents";
+//   }
+// }

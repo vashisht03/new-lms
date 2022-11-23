@@ -316,9 +316,9 @@ span.admin-img {
 .l-navbar  .sub_categories li:first-child{
     padding-top: 10px !important;
 }
-.l-navbar  .sub_categories{
+/* .l-navbar  .sub_categories{
     display: none;
-}
+} */
 .l-navbar  .sub_categories li {
     margin: 9px 0 0 !important;
     margin-bottom: 0 !important;
@@ -572,7 +572,7 @@ li.blue-light:hover{
   }
   
   .row-table ::-webkit-scrollbar-thumb {
-    background-color: #656565db656565db;    /* color of the scroll thumb */
+    background-color: #656565;    /* color of the scroll thumb */
     border-radius: 15px;       /* roundness of the scroll thumb */
     border: 3px solid #ffffff;  /* creates padding around scroll thumb */
   }
@@ -1413,7 +1413,7 @@ padding:12px;
     cursor: pointer;
 }
 .table-info{
-    display: none;
+    /* display: none; */
     transition: all 0.5s linear;
 }
 .details-control:hover{
