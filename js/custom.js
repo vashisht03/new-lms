@@ -22,6 +22,7 @@ function toggle(source) {
 $('.js-example-basic-multiple').select2();
 
 });
+
 // var btnToggle = document.querySelector("#header-toggle");
 // var sidebar = document.querySelector(".l-navbar");
 
@@ -314,3 +315,24 @@ function clean_first_tr(firstTr) {
 //     x.style.display = "contents";
 //   }
 // }
+//add more website
+$(document).ready(function(){
+    var maxField = 10;
+    var addButton = $('.add_button'); 
+    var wrapper = $('.field_wrapper');
+    var source = "{!! url('public/images/images-asset/minus.png') !!}"; 
+    var fieldHTML = "<div class='row commonnew'><div class='mb-3 col-md-4 col-sm-12'><div class='input-group'><input type='text' class='form-control' placeholder='http://example.com/' aria-label='Input group example' aria-describedby='btnGroupAddon' name='field_name[]'><a class='input-group-text btn-primary remove_button' title='Add field' style='height: 34px;' ><i class='fa fa-minus-circle' aria-hidden='true'></i></a></div></div></div>"; 
+    var x = 1; 
+    
+    $(addButton).click(function(){
+        if(x < maxField){
+            x++; 
+            $(wrapper).append(fieldHTML);
+        }
+    });
+    $(wrapper).on('click', '.remove_button', function(e){
+        e.preventDefault();
+        $(this).closest('div.commonnew').remove();
+        x--;
+    });
+});
