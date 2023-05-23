@@ -1,6 +1,8 @@
 // date picker
 $( function() {
-  $( "#datepicker" ).datepicker();
+  $( "#datepicker" ).datepicker({
+    dateFormat: 'yy-mm-dd'
+  });
 } );
 function toggle(source) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -9,7 +11,9 @@ function toggle(source) {
             checkboxes[i].checked = source.checked;
     }
 }
-
+function removeDropDownClassOnChange(){
+  $(".daterangepicker").removeClass("dropdown-menu");
+}
 // toggle category menu
 // $(document).ready(function(){
 // $(".category-menu").click(function(){
@@ -22,7 +26,6 @@ function toggle(source) {
 $('.js-example-basic-multiple').select2();
 
 });
-
 // var btnToggle = document.querySelector("#header-toggle");
 // var sidebar = document.querySelector(".l-navbar");
 
@@ -142,38 +145,50 @@ document.addEventListener("DOMContentLoaded", function(event) {
           });
 
           
-          $(function() {
+          // $(function() {
 
-            var start = moment().subtract(29, 'days');
-            var end = moment();
+          //   var start = moment().subtract(29, 'days');
+          //   var end = moment();
             
-            function cb(start, end) {
-                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-            }
+          //   function cb(start, end) {
+          //       $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+          //   }
             
-            $('#reportrange').daterangepicker({
-                startDate: start,
-                endDate: end,
-                ranges: {
-                   'Today': [moment(), moment()],
-                   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                   'This Month': [moment().startOf('month'), moment().endOf('month')],
-                   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                }
-            }, cb);
+          //   $('#reportrange').daterangepicker({
+          //       startDate: start,
+          //       endDate: end,
+          //       ranges: {
+          //          'Today': [moment(), moment()],
+          //          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          //          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          //          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          //          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          //          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          //       }
+          //   }, cb);
             
-            cb(start, end);
+          //   cb(start, end);
             
-            });
+          //   });
 
             // date time range
             $(document).ready(function() {
+              var today = new Date();
+              var tomorrow = new Date(today); // create a new date object with the same value as today
+              tomorrow.setDate(tomorrow.getDate() + 1); // add one day to it
+              var dd = tomorrow.getDate(); // get the day as a number (1-31)
+              var mm = tomorrow.getMonth() + 1; // get the month as a number (1-12)
+              var yyyy = tomorrow.getFullYear(); // get the year as a number (2023)
+              var formattedDate = yyyy + "-" + mm + "-" + dd; // format the date as dd/mm/yyyy
+
               $.datetimepicker.setLocale('RU');
              $('#datetimepicker').datetimepicker({
-              step: 15 
-          });
+              value: formattedDate+' 10:00',
+              step: 15,
+              format: 'Y-m-d H:i',
+              minDate: '-1970/01/01', //yesterday is minimum date(for today use 0 or -1970/01/01)
+              //  maxDate:'+1970/02/30'//tomorrow is maximum date calendar
+            });
             
           });
 
@@ -315,24 +330,3 @@ function clean_first_tr(firstTr) {
 //     x.style.display = "contents";
 //   }
 // }
-//add more website
-$(document).ready(function(){
-    var maxField = 10;
-    var addButton = $('.add_button'); 
-    var wrapper = $('.field_wrapper');
-    var source = "{!! url('public/images/images-asset/minus.png') !!}"; 
-    var fieldHTML = "<div class='row commonnew'><div class='mb-3 col-md-4 col-sm-12'><div class='input-group'><input type='text' class='form-control' placeholder='http://example.com/' aria-label='Input group example' aria-describedby='btnGroupAddon' name='field_name[]'><a class='input-group-text btn-primary remove_button' title='Add field' style='height: 34px;' ><i class='fa fa-minus-circle' aria-hidden='true'></i></a></div></div></div>"; 
-    var x = 1; 
-    
-    $(addButton).click(function(){
-        if(x < maxField){
-            x++; 
-            $(wrapper).append(fieldHTML);
-        }
-    });
-    $(wrapper).on('click', '.remove_button', function(e){
-        e.preventDefault();
-        $(this).closest('div.commonnew').remove();
-        x--;
-    });
-});
