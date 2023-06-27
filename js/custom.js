@@ -330,3 +330,18 @@ function clean_first_tr(firstTr) {
 //     x.style.display = "contents";
 //   }
 // }
+$(function(){
+    $('.readmore a.more').on('click', function(){
+        var $parent = $(this).parent();
+        if($parent.data('visible')) {
+            $parent.data('visible', false).find('.ellipsis').show()
+            .end().find('.moreText').hide()
+            .end().find('a.more').text('show more');
+        } else {
+            $parent.data('visible', true).find('.ellipsis').hide()
+            .end().find('.moreText').show()
+            .end().find('a.more').text('show less');
+        }
+    });
+});
+$('.select2').select2();
