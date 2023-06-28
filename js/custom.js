@@ -345,3 +345,13 @@ $(function(){
     });
 });
 $('.select2').select2();
+
+$(function() {
+  var path = window.location.href; 
+  // because the 'href' property of the DOM element is the absolute path
+  $('.menu_nav a').each(function() {
+    if (this.href === path) {
+      $(this).addClass('active-link');
+    }
+  });
+});
